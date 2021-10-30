@@ -34,14 +34,26 @@
 					<section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1>Hola! Bienvenido a la web de VRKaoko <3</h1>
+								<h1>Mi canal de Twitch!</h1>
 							</header>
 							<div class="content">
-								<p>En esta web (oficial) podrás ver todo lo relacionado con mi canal <br></br>y todo lo que tenga que ver con mi figura de internet!</p>
-							</div>
 						</div>
 					</section>
+					<div id="main" class="alt">
 
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Twitch</h1>
+									</header>
+									<h2 id="content">Mira mis directos mientras me apoyas económicamente! Recuerda quitar el AD-Block!</h2>
+									<div id="twitch-embed"></div>
+								<iframe src="https://www.twitch.tv/embed/vrkaoko_games/chat?parent=vrkaoko.github.io"
+									height="300"
+									width="500"
+									theme="dark">
+							</iframe>
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
@@ -56,7 +68,6 @@
 							</ul>
 						</div>
 					</footer>
-
 			</div>
 
 		<!-- Scripts -->
@@ -67,6 +78,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://embed.twitch.tv/embed/v1.js"></script>
+			  <script type="text/javascript">
+				new Twitch.Embed("twitch-embed", {
+				  width: 500,
+				  height: 300,
+				  channel: "vrkaoko_games",
+				  autoplay: "true",
+				  layout: "video",
+				  parent: "vrkaoko.github.io"
+				});
+			  </script>
 
 	</body>
 </html>
